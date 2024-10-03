@@ -60,8 +60,11 @@ dependencies {
     // Feature module support for Fragments
     implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
 
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
+
     // Testing Navigation
     androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
+
 
 
 
