@@ -5,13 +5,16 @@ import android.renderscript.ScriptGroup.Binding
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 
 import com.example.wavesoffood.R
+import com.example.wavesoffood.adaptar.PopulerAddatar
 import com.example.wavesoffood.databinding.FragmentHomeBinding
 
 
@@ -59,6 +62,15 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_SHORT).show()
             }
         })
+
+        val foodName = listOf("Burger", "Sandwinch", "Momo", "item")
+        val Price = listOf("Q5","Q7","Q10","Q20")
+        val populerFoodImage=
+            listOf(R.drawable.menu1, R.drawable.menu2,R.drawable.menu3,R.drawable.menu4)
+        val adapter = PopulerAddatar(foodName,Price,populerFoodImage)
+        binding.PopulerRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.PopulerRecyclerView.adapter = adapter
+
 
     }
 }
