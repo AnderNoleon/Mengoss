@@ -1,12 +1,11 @@
 package com.example.wavesoffood.adaptar
 
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wavesoffood.databinding.MenuItemBinding
 
-class MenuAdaptear(private val menuItemsName: MutableList<String> , private val menuItemPrice:MutableList<String> , private val MenuImage:MutableList<Int> ): RecyclerView.Adapter<MenuAdaptear.MenuViewHolder>() {
+class MenuAdapter(private val menuItemsName: List<String>, private val menuItemPrice: List<String>, private val MenuImage: List<Int>): RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
