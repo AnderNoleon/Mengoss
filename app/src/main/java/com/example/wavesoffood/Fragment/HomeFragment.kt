@@ -1,6 +1,7 @@
 package com.example.wavesoffood.Fragment
 
 import android.os.Bundle
+import android.os.TestLooperManager
 import android.renderscript.ScriptGroup.Binding
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.wavesoffood.MenuBootomSheetFragment
 
 import com.example.wavesoffood.R
 import com.example.wavesoffood.adaptar.PopulerAddatar
@@ -32,6 +34,13 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater, container,false)
+
+        binding.viewAllMenu.setOnClickListener{
+            val bottomSheetDialog = MenuBootomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager,"Test")
+
+
+        }
         return binding.root
 
 
