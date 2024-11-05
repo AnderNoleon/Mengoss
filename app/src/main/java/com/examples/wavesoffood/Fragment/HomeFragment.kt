@@ -49,9 +49,9 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val imageList = ArrayList<SlideModel>()
-        imageList.add(SlideModel(R.drawable.banner1,ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.promo11,ScaleTypes.FIT))
         imageList.add(SlideModel(R.drawable.banner2,ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.banner3,ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.promo22,ScaleTypes.FIT))
 
         val imageSlider = binding.imageSlider
         imageSlider.setImageList(imageList)
@@ -69,10 +69,10 @@ class HomeFragment : Fragment() {
             }
         })
 
-        val foodName = listOf("Burger", "Sandwinch", "Momo", "item")
-        val Price = listOf("Q5","Q7","Q10","Q20")
+        val foodName = listOf("Chivos", "Wendys", "Carnosa", "Reyes")
+        val Price = listOf("Q52","Q74","Q100","Q200")
         val populerFoodImage=
-            listOf(R.drawable.menu1, R.drawable.menu2,R.drawable.menu3,R.drawable.menu4)
+            listOf(R.drawable.promo11, R.drawable.menu2,R.drawable.menu3,R.drawable.promo22)
         val adapter = PopulerAddatar(foodName,Price,populerFoodImage, requireContext())
         binding.PopulerRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.PopulerRecyclerView.adapter = adapter

@@ -16,13 +16,13 @@ import com.example.wavesoffood.databinding.FragmentSearchBinding
 class SearchFragment : Fragment() {
     private lateinit var binding: FragmentSearchBinding
     private lateinit var adapter: MenuAdapter
-    private val orignalMenuFoodName = listOf("Burger","sandwich","mono","item","sandwich","mono")
-    private val originalmenuItemPrice = listOf("Q5","Q6","Q10","Q15","Q10","Q20")
+    private val orignalMenuFoodName = listOf("Burger","Cebollines","Chalupa","Shuko","Megas burgers ","Para la familia")
+    private val originalmenuItemPrice = listOf("Q55","Q46","Q15","Q36","Q245","Q109")
     private val originalmenuImage = listOf(
-        R.drawable.menu1 ,
-        R.drawable.menu2 ,
-        R.drawable.menu3 ,
-        R.drawable.menu4 ,
+        R.drawable.burger1 ,
+        R.drawable.cebolline ,
+        R.drawable.chulapa ,
+        R.drawable.debage ,
         R.drawable.menu5 ,
         R.drawable.menu6)
 

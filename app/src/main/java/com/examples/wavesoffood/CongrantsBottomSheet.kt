@@ -26,13 +26,13 @@ class CongrantsBottomSheet : BottomSheetDialogFragment() {
     ): View? {
         binding = FragmentCongrantsBottomSheetBinding.inflate(layoutInflater,container,false)
         binding.goHome.setOnClickListener{
-            //val intent = Intent(requireContext(),MainActivity ::class.java)
+            val intent = Intent(requireContext(),MainActivity ::class.java)
             //  Se dirige al menu principal
-            // startActivity(intent)
+            startActivity(intent)
 
             // login
-            val intent = Intent(requireContext(),SignActivity ::class.java)
-            startActivity(intent)
+            // val intent = Intent(requireContext(),SignActivity ::class.java)
+            // startActivity(intent)
 
         }
         return binding.root

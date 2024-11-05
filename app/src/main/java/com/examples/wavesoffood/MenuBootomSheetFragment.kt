@@ -31,15 +31,16 @@ class MenuBootomSheetFragment : BottomSheetDialogFragment() {
         }
 
 
-        val menuFoodName = listOf("Burger","sandwich","mono","item","sandwich","mono")
-        val menuItemPrice = listOf("Q5","Q6","Q10","Q15","Q10","Q20")
+        val menuFoodName = listOf("Burger","Cebollines","Chalupa","Shuko","Megas burgers ","Para la familia","Tocino rico")
+        val menuItemPrice = listOf("Q55","Q46","Q15","Q36","Q245","Q109","Q65")
         val menuImage = listOf(
-            R.drawable.menu1 ,
-            R.drawable.menu2 ,
-            R.drawable.menu3 ,
-            R.drawable.menu4 ,
+            R.drawable.burger1 ,
+            R.drawable.cebolline ,
+            R.drawable.chulapa ,
+            R.drawable.debage ,
             R.drawable.menu5 ,
-            R.drawable.menu6)
+            R.drawable.menu6,
+            R.drawable.tocino)
         val adapter = MenuAdapter(
             ArrayList(menuFoodName),
             ArrayList(menuItemPrice),
