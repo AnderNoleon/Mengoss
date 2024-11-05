@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context="com.examples.wavesoffood.LoginActivity">
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -39,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/EmailAddress"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="8dp"
@@ -58,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Password"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
@@ -70,10 +71,10 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddress"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/EmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress" />
 
     <TextView
         android:id="@+id/textView7"
@@ -81,13 +82,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="O Abre con"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Password"
         app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/Password"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/facebookButton"
         android:background="@drawable/whitebutton"
         android:layout_width="152dp"
         android:layout_height="57dp"
@@ -99,11 +100,11 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/googleButton"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/googleButton"
         android:background="@drawable/whitebutton"
         android:layout_width="152dp"
         android:layout_height="57dp"
@@ -112,7 +113,7 @@
         android:drawableLeft="@drawable/google"
         android:text="Google"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/facebookButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -129,7 +130,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/googleButton" />
 
     <TextView
         android:id="@+id/donthavebutton"

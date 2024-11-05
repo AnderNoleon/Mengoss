@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash_Screen">
+    tools:context="com.examples.wavesoffood.Splash_Screen">
 
     <ImageView
         android:id="@+id/imageView"

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -36,9 +37,11 @@ buildFeatures{
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -46,6 +49,26 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.storage)
+    // implementation("com.google.android.gms:play-services-auth:12.0.1")
+    // implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+        // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+
+        // Add the dependency for the Firebase Authentication library
+        // When using the BoM, you don't specify versions in Firebase library dependencies
+    // implementation("com.google.firebase:firebase-auth-ktx")
+
+        // Also add the dependency for the Google Play services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+
+    // apply plugin: "com.google.gms.google-services"
+    // dependencies (compile "com.google.android.gms:play-services-auth:12.0.1")
+    // compile(com.google.android.gms:play-services-auth:12.0.1)
 
 
     val nav_version = "2.8.0"

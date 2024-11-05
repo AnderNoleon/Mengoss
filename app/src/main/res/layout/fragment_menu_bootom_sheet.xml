@@ -7,7 +7,8 @@
     android:orientation="vertical"
 
     android:background="@color/white"
-    tools:context=".MenuBootomSheetFragment">
+    tools:context="com.examples.wavesoffood.MenuBootomSheetFragment">
+
 
     <!-- TODO: Update blank fragment layout -->
 

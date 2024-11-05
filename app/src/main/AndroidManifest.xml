@@ -13,35 +13,36 @@
         android:theme="@style/Theme.WavesOfFood"
         tools:targetApi="31" >
         <activity
-            android:name=".DetailsActivity"
+            android:name="com.examples.wavesoffood.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".PayOutActivity"
+            android:name="com.examples.wavesoffood.PayOutActivity"
             android:exported="false" />
         <activity
-            android:name=".ChooseLocationActivity"
+            android:name="com.examples.wavesoffood.ChooseLocationActivity"
             android:exported="false" />
         <activity
-            android:name=".SignActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StartActivity"
+            android:name="com.examples.wavesoffood.SignActivity"
             android:exported="true" />
         <activity
-            android:name=".Splash_Screen"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustPan" >
+            android:name="com.examples.wavesoffood.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.examples.wavesoffood.StartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.examples.wavesoffood.Splash_Screen"
+            android:exported="true" />
+        <activity
+            android:name="com.examples.wavesoffood.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" >
+
         </activity>
     </application>
 

@@ -7,7 +7,7 @@
     android:paddingStart="6dp"
     android:background="@color/white"
     android:paddingEnd="6dp"
-    tools:context=".Fragment.ProfileFragment">
+    tools:context="com.examples.wavesoffood.Fragment.ProfileFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
